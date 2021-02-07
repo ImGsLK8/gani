@@ -12,6 +12,7 @@ var sprite = 0;
 
 var gani = {};
 gani.sprites = {};
+gani.dir = 2;
 
 var ox = (canvas.width - 48)/2,oy = (canvas.height - 48)/2,oz = 1;
 var dragging = false,dragx = ox,dragy = oy;
@@ -411,12 +412,6 @@ uploader.onchange = () => {
 }
 
 async function loadImageFile(file) {
-
-  if (file.type == "image/gif") {
-    const gifimg = gifler(file);
-    console.log("Loading gif... " + gifimg.frames());
-  }
-    
   try {
     let contentBuffer = await readImageAsync(file);
     
@@ -540,6 +535,10 @@ function getParamGani(img) {
     [96,64,"shop_bow_preview.gani"],
     [360,20,"classic_wingsold.gani"],
     [100,110,"classic_wings.gani"],
+    [240,96,"ci_newumbrella_opening-fixed.gani"],
+    [320,128,"ci_dirumbrella_opening-fixed.gani"],
+    [320,128,"ci_dirumbrella_opening-fixed.gani"],
+    [400,80,"dustytest12921a.gani"],
   ];
   for (let i of ganiLookup) {
     if (img.width == i[0] && img.height == i[1]) return i[2];
@@ -641,7 +640,8 @@ function createGaniFromText(text) {
   
   gani = {};
   gani.sprites = {};
-  changeDir(oldDir == null ? 2 : oldDir);
+  changeDir(oldDir < 0 ? 2 : oldDir);
+  //changeDir(2);
   gani.anistep = 0;
   gani.setbackto = null;
   gani.loaded = true;
