@@ -10,11 +10,11 @@ SPRITE   42           ATTR1   96    0   48   48 hat down
 SPRITE   43           ATTR1  144    0   48   48 hat right
 SPRITE   44           ATTR1    0   48   48   48 hat pull up
 SPRITE   45           ATTR1   48   48   48   48 hat pull left
-SPRITE   46           ATTR1   96   48   48   48 hat pull down 
+SPRITE   46           ATTR1   96   48   48   48 hat pull down
 SPRITE   47           ATTR1  144   48   48   48 hat pull right
-SPRITE   48           ATTR1    0   96   48   48 hat dead 
-SPRITE  100            HEAD    0    0   32   32 head up 
-SPRITE  101            HEAD    0   32   32   32 head left 
+SPRITE   48           ATTR1    0   96   48   48 hat dead
+SPRITE  100            HEAD    0    0   32   32 head up
+SPRITE  101            HEAD    0   32   32   32 head left
 SPRITE  102            HEAD    0   64   32   32 head down
 SPRITE  103            HEAD    0   96   32   32 head right
 SPRITE  104            HEAD    0  128   32   48 head pulling up
@@ -116,19 +116,18 @@ SPRITE  282            BODY   64  640   32   32 body carrying5 down
 SPRITE  283            BODY   96  640   32   32 body hurted right
 SPRITE  284            BODY    0  672   32   48 body pulling2 up
 SPRITE  285            BODY   32  672   48   32 body dead
-SPRITE  286            BODY   32  672   48   32 body dead
-SPRITE  5000           ATTR4    0    0   48   48 head accessory up
-SPRITE  5001           ATTR4   48    0   48   48 head accessory left
-SPRITE  5002           ATTR4   96    0   48   48 head accessory down
-SPRITE  5003           ATTR4  144    0   48   48 head accessory right
-SPRITE  5004           ATTR4    0   48   48   48 head accessory pull up
-SPRITE  5005           ATTR4   48   48   48   48 head accessory pull left
-SPRITE  5006           ATTR4   96   48   48   48 head accessory pull down
-SPRITE  5007           ATTR4  144   48   48   48 head accessory pull right
-SPRITE  5008           ATTR4    0   96   48   48 head accessory dead
-SPRITE  5009           ATTR4   48   96   48   48 head accessory up drawunder
-SPRITE  5010           ATTR4   96   96   48   48 head accessory down drawunder
-SPRITE  5011           ATTR4  144   96   48   48 head accessory pull down drawunder
+SPRITE 5000           ATTR4    0    0   48   48 head accessory up
+SPRITE 5001           ATTR4   48    0   48   48 head accessory left
+SPRITE 5002           ATTR4   96    0   48   48 head accessory down
+SPRITE 5003           ATTR4  144    0   48   48 head accessory right
+SPRITE 5004           ATTR4    0   48   48   48 head accessory pull up
+SPRITE 5005           ATTR4   48   48   48   48 head accessory pull left
+SPRITE 5006           ATTR4   96   48   48   48 head accessory pull down
+SPRITE 5007           ATTR4  144   48   48   48 head accessory pull right
+SPRITE 5008           ATTR4    0   96   48   48 head accessory dead
+SPRITE 5009           ATTR4   48   96   48   48 head accessory up drawunder
+SPRITE 5010           ATTR4   96   96   48   48 head accessory down drawunder
+SPRITE 5011           ATTR4  144   96   48   48 head accessory pull down drawunder
 
 DEFAULTATTR1 hat0.png
 DEFAULTATTR4 ci_accessory_test0.png
@@ -136,9 +135,8 @@ DEFAULTHEAD head19.png
 DEFAULTBODY body.png
 
 ANI
-   0  12  34,   10  36  16,  200   8  16, 5009   0   0,  100   8   2, 5000   0   0,   40   0 -16
-   0  12  36,   11   6  16,  201  12  16,  101  12   2, 5001  -1   0,   41   0 -16
-   0  12  34,  202   8  16, 5010   0   0,  102   8   2, 5002   0   0,   42   0 -16,   12   8  24
-   0  12  36,   13  34  16,  203   4  16,  103   4   2, 5003   0   0,   43   0 -16
-
+   0  12  34,  252   8  16, 5009   0   3,  108   8   2, 5000   0   3,   40   0 -13
+   0  12  36,  241  10  16,  101   8   2, 5001  -4   0,   41  -4 -16
+   0  12  34,  242   8  16, 5010   0   8,  110   8   6, 5002   0   7,   42   0  -9
+   0  12  36,  243   6  16,  103   8   2, 5003   4   0,   43   4 -16
 ANIEND
